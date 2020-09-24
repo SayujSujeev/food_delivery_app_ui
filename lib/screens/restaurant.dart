@@ -216,6 +216,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
           ),
           Expanded(
             child: GridView.count(
+              physics: BouncingScrollPhysics(),
               padding: EdgeInsets.all(10.0),
               crossAxisCount: 2,
               children: List.generate(widget.restaurant.menu.length, (index) {
